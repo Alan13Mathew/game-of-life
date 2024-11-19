@@ -1,0 +1,14 @@
+<div class="wrapper">
+        <app-rectangle [grid]="grid" (cellClick)="toggleCell($event)"/>
+        <div class="content">
+                <button mat-raised-button (click)="nextGeneration()">Next Generation</button>
+                <button mat-raised-button (click)="toggleSimulation()">{{ isRunning ? 'Stop' : 'Start' }}</button>
+                <button mat-raised-button (click)="startAutoPlay()">Auto Play</button>
+                <button mat-raised-button (click)="initializeRandomGrid()">Reset</button>
+                <!-- <button mat-raised-button (click)="createGliderGun()">Glider Gun</button>
+                <button mat-raised-button (click)="createGlider()">Glider</button>
+                <button mat-raised-button (click)="createBlinker()">Blinker</button>
+                <button mat-raised-button (click)="createPulsar()">Pulsar</button>
+                <button mat-raised-button (click)="createSpaceship()">Spaceship</button> -->
+              </div>
+</div>
