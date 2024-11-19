@@ -1,0 +1,15 @@
+
+.heading {
+    color: #E8F1F2;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+    /* padding: 20px; */
+    letter-spacing: 2px;
+    background: linear-gradient(45deg, #66FCF1, #45A29E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+

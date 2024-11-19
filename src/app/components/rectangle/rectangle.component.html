@@ -1,12 +1,11 @@
 <div class="grid">
-  <div
-    *ngFor="let row of grid; let i = index"
-    class="row"
-  >
+  <div *ngFor="let row of grid; let i = index" class="row">
     <div
       *ngFor="let cell of row; let j = index"
       class="rectangle"
       [class.alive]="cell === 1"
+      [style.width.px]="cellSize"
+      [style.height.px]="cellSize"
       (click)="onCellClick(i, j)"
     >
     </div>
