@@ -1,5 +1,7 @@
 # GameOfLife
 
+Try it here : [gameofconway](https://gameofconway.netlify.app)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.10.
 
 This is a just sample project made for fun and curiosity. [Game of life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
