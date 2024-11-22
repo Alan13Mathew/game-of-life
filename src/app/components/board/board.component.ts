@@ -13,8 +13,8 @@ import { RectangleComponent } from '../rectangle/rectangle.component';
 export class BoardComponent implements OnInit, OnDestroy {
 
   grid!: number[][];
-  rows = 10;
-  cols = 10;
+  rows = 20;
+  cols = 20;
   isRunning = false;
   private intervalId: number | null = null;
   private autoPlayIntervalId: number | null = null;
