@@ -1,11 +1,57 @@
-.content{
-    margin: 10px;
+.wrapper {
+    margin: 20px auto;
+    max-width: fit-content;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    /* background-color: #fafafa; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-button{
-    margin: 5px;
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
 }
-.wrapper {
-    margin: 10px;
-    background-color: aqua;
+
+button {
+    margin: 0;
+    min-width: 120px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Optional: Style for the grid container */
+app-rectangle {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .wrapper {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .content {
+        gap: 6px;
+    }
+    
+    button {
+        min-width: 100px;
+        font-size: 13px;
+    }
 }

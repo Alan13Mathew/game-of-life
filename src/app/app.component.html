@@ -1,4 +1,25 @@
 <div class="heading">
-<h2>Game Of Life</h2>
+  <h2>Game Of Life</h2>
 </div>
-<app-board/>
+<app-board />
+
+<div class="rules">
+  <ol>
+    <li>
+      Any live cell with fewer than two live neighbours dies, as if by
+      <b>underpopulation</b>.
+    </li>
+    <li>
+      Any live cell with two or three live neighbours lives on to the next
+      generation.
+    </li>
+    <li>
+      Any live cell with more than three live neighbours dies, as if by
+      <b>overpopulation</b>.
+    </li>
+    <li>
+      Any dead cell with exactly three live neighbours becomes a live cell, as
+      if by <b>reproduction</b>.
+    </li>
+  </ol>
+</div>

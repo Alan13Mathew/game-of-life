@@ -17,3 +17,33 @@ body {
     flex-direction: column;
     align-items: center;
 }
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 12px;   /* vertical scrollbar width */
+    height: 12px;  /* horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(11, 12, 16, 0.8); /* dark transparent track */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #66FCF1, #45A29E);
+    border-radius: 10px;
+    border: 2px solid rgba(11, 12, 16, 0.8); /* inner spacing to track */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #45A29E, #66FCF1);
+}
+
+/* Optional: smooth hover glow */
+::-webkit-scrollbar-thumb {
+    box-shadow: 0 0 8px rgba(102, 252, 241, 0.5);
+}
+/* Scrollbar for Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #66FCF1 rgba(11,12,16,0.8);
+}
